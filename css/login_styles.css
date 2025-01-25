@@ -1,0 +1,80 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    max-height: 600px;
+}
+.welcome-section {
+    background-color: #1c2331;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.login-form-section {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 3rem;
+}
+.form-container {
+    max-width: 400px;
+    margin: auto;
+}
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+@media (max-width: 992px) { /* Matches Bootstrap's lg breakpoint */
+    .welcome-section {
+        display: none;
+    }
+    .login-card {
+        max-width: 500px; /* Adjust card size for smaller screens */
+    }
+    .login-form-section {
+        display: flex;
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        padding: 2rem;
+    }
+}
+
+.go-back {
+    text-align: center;
+    margin-top: 20px;
+}
+a.btn-minimal {
+    border: 1px solid;
+    background-color: transparent;
+    color: #007bff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none; /* To remove the underline */
+}
+a.btn-minimal:hover {
+    background-color: #007bff;
+    color: white;
+}
+a.btn-minimal:focus {
+    outline: none;
+}

@@ -1,0 +1,202 @@
+#search-form-desktop .form-control,
+#search-form-desktop .btn {
+    transition: all 0.3s ease-in-out;
+}
+
+#search-form-desktop .form-control {
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 0;
+}
+
+#search-form-desktop .form-control:not(.d-none) {
+    width: 200px; /* Adjustable */
+}
+
+#search-form-desktop .btn {
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover{
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-item:hover{
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #search-input,
+    #search-submit {
+        display: block !important;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        text-align: left;
+    }
+}
+
+/* Search Results Container */
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+/* Individual Search Card */
+.search-card {
+    background: rgba(255, 255, 255, 0.7); /* Glass effect */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
+}
+
+/* Hover Effect */
+.search-card:hover {
+    transform: translateY(-8px); /* Subtle lift on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Card Content Styling */
+.search-card h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.search-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+/* Status Styling */
+.search-card .status {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #007bff;
+    text-align: center;
+}
+
+/* Buttons Group */
+.search-card .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.search-card button {
+    border: none;
+    border-radius: 20px;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Reserve Button */
+.search-card button.reserve-btn {
+    background-color: #28a745;
+}
+
+.search-card button.reserve-btn:hover {
+    background-color: #218838;
+}
+
+/* Delete Button */
+.search-card button.delete-btn {
+    background-color: #dc3545;
+}
+
+.search-card button.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* No Results Styling */
+.no-results {
+    background: rgba(255, 255, 255, 0.7); /* Glass effect */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Similar to card */
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.no-results p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 576px) {
+    .search-card {
+        border-radius: 8px;
+    }
+
+    .search-card h5 {
+        font-size: 1rem;
+    }
+
+    .search-card p {
+        font-size: 0.8rem;
+    }
+
+    .search-card button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* No Results Styling */
+.no-results {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.no-results p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+    .no-results {
+        padding: 1.5rem;
+    }
+
+    .no-results p {
+        font-size: 1rem;
+    }
+}
